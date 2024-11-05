@@ -11,10 +11,10 @@ body {
 	grid-template: auto auto auto auto;
 	grid-template-column: 1fr;
 	grid-template-areas:
-		"header"
-		"navi"
-		"main"
-		"footer";
+	"header"
+	"navi"
+	"main"
+	"footer";
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 98%;
 	width: 98%;                     /* changed from 800 pixels */
