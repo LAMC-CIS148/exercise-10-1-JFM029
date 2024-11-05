@@ -8,9 +8,7 @@ html {
 }
 body {
 	display: grid;
-	grid-template: auto auto auto auto;
-	grid-template-column: repeat(1, 1fr);
-	grid-row: 1 / 4;
+	grid-template: repeat(4, auto) / 1fr;
 	grid-template-areas: 
 	"header"
 	"navi"
@@ -24,11 +22,16 @@ body {
 	border: 3px solid #931420;
 	background-color: #fffded;
 }
+main{
+	grid-area: main;
+	display: grid;
+}
 a:focus, a:hover {
 	font-style: italic;
 }
 /* the styles for the header */
 header {
+	grid-area: head;
 	padding: 1.5em 0 2em 0;
 	border-bottom: 3px solid #931420;
 		background-image: -moz-linear-gradient(
@@ -56,6 +59,7 @@ header img {
 	text-shadow: 2px 2px 2px #800000;
 }
 /* the styles for the navigation menu */
+#nav_menu{ grid-area: navi;}
 #nav_menu ul {
 	list-style-type: none;
 	margin: 0;
